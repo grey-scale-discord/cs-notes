@@ -13,9 +13,9 @@
 - [ ] **(D)** Make a separate folder name `code` where we would store all the examples codes
 - **Index Page**
 	- [ ] **(S)** `retrieveChapterNames()` - retrieve all the chapter names of the  `code` folder. 
-	- [ ] **(S)** Make layout of the index page in html
+	- [x] **(S)** Make layout of the index page in html
 	- [ ] **(D)** Convert the layout of index page from html to JSX (nextjs)
-	- [ ] **(S)** Add styling to the index page
+	- [x] **(S)** Add styling to the index page
 	- Render all the chapters to index page using `retrieveChapterNames()`
 - **Chapter Page**
 	- [ ] **(S)** `retrieveTopics()` - returns all the topic path given a topic name from `code` folder
