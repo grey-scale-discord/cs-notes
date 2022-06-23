@@ -3,6 +3,7 @@
 }
 
 body{
+    background-color: #151515;
     font-family: 'Roboto' , 'sans-serif';
 }
 
@@ -102,58 +103,90 @@ body{
     margin-bottom: 40px;
 } 
 
-.container{
-    background-color: #151515;
+.email-container{
+    margin-top: 100px;
+    margin-left: 30vh;
     min-height: calc(100vh - 50px);
     color: white;
 }
 
-.content-container{
-    padding-top: 10px;
-    margin-left: 60px;
-}
-
-
-
-.trending-list{
-    border-style: solid;
-    border-radius: 20px;
-    opacity: 0.8;
-    margin-top: 20px;
-    margin-left: 600px;
-    margin-bottom: 20px;
-    width: 60vh;
-    height: 1vh;
-    text-align: justify;
+.email-container-labels{
+    width: 85%;
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding-bottom: 70px;
 }
 
-.trending-list-item-title{
-    font-weight: bold;
-    font-size: 7mm;
-    font-variant-caps: all-petite-caps;
-    color: white;
+.email-list-item{
+    text-transform: capitalize;
+    background-color: rgba(131, 49, 49, 0.74);
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.email-container-inputs{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    margin-top: 2.5vh;
-    margin-left: 11vh;
 }
 
-.trending-list:hover{
-    transform: scale(1.1);
-    transition: 0.1s all ease-in-out;
-    background-color:aliceblue;
+.email-list-inputs{
+    margin-left: 15%;
+    width: 70%;
+    background-color: grey;
+    height: 41px;
+    font-size: 30px;
+    margin-bottom: 26px;
 }
 
-.trending-list:hover .trending-list-item-title{
-    color: red;
+.email-list-item-main{
+    background-color: rgba(131, 49, 49, 0.74);
+    text-transform: capitalize;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 38vh;
 }
 
-.trending-list:hover .trending-list-item-img{
-    opacity: 0.4;
+.email-list-inputs-main{
+    margin-left: 1%;
+    margin-top: 4%;
+    width: 97%;
+    padding-bottom: 30vh;
+    background-color: grey;
+    height: 41px;
+    font-size: 30px;
+    margin-bottom: 26px;
 }
 
+.email-message{
+    text-transform: capitalize;
+    background-color: rgba(131, 49, 49, 0.74);
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
+.submit{
+    background-color: grey;
+    position: absolute;
+    font-size: 30px;
+    margin-left: 84.6%;
+    margin-top: -5.4%;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    padding-left: 55px;
+    padding-right: 59px;
+    text-align: center;
+}
 
 .arrow{
     font-size: 90px;
@@ -172,7 +205,6 @@ body{
 
 .container.active , .sidebar.active{
     background-color: white;
-
 }
 
 .toggle.active{
