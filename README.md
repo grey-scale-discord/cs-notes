@@ -2,11 +2,11 @@
 #### Live Code Editor Components
 - [ ] **(S)** Put all the information from this link in `keyword.json`
 		  https://www.w3schools.com/python/python_ref_functions.asp
-- [ ] **(S)** Make a utility function `retrieveKeywordDetails()` in `util.js` that takes in a certain a certain keyword as an input and returns the detail about that keyword from `keyword.json`. If there is no such keyword it returns `null`
-	https://codemirror.net/examples/tooltip/
+- [ ] **(S)** Make a utility function `retrieveKeywordDetails()` in `util.js` that takes in a certain keyword as an input and returns the detail about that keyword from `keyword.json`. If there is no such keyword it returns `null`
 - [ ] **(D)** Make a next.js api endpoint `/execute` that will take in python code as parameter and execute it on the server and send back the result.
 - [ ] **(D)** Make a next.js code editor component using code mirror. (edtior area + execution area)
 	- [ ] **(D)** Show keyword details as a tooltip when hovered using `retrieveKeywordDetails()`
+		  		  https://codemirror.net/examples/tooltip/
 	- [ ] **(D)** Integrate `/execute` endpoint with the editor component
 
 #### Pages
