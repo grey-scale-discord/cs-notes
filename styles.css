@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto' , 'sans-serif';
+}
+
+/* Home Page CSS */
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 0 60px;
+    height: 100%;
+    color:white;
+    font-family: "Sen" , "sens-sarif";
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-family: "Sen" , "sens-sarif";
+    font-size: 30px;
+    color: rgb(192, 11, 11);
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 70px;
+    font-size: 20px;
+}
+
+.menu-list-item.active{
+    font-weight: bolder;
+}
+
+.profile-container{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s all;
+}
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top:3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.left-menu-icon{
+    color:white;
+    font-size: 20px;
+    margin-bottom: 40px;
+} 
+
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container{
+    padding-top: 10px;
+    margin-left: 60px;
+}
+
+.featured-content{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 120vh;
+    height: 65vh;
+    animation: slide 20s infinite;
+}
+
+.featured-trending-title{
+    padding-left: 1200px;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    color: white;
+    width: 40vh;
+    font-size: 8mm;
+    font-weight: bold;
+}
+
+.trending-list{
+    opacity: 0.8;
+    margin-left: 1189px;
+    width: 60vh;
+    height: 1vh;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.trending-list-item-img{
+    margin-left: 1.2vh;
+    margin-top: 1.3vh;;
+    width: 80px;
+    height: 80px;
+    border-color: black;
+    border-style:solid;
+    border-width: 0.3mm;
+    position: absolute;
+}
+
+.trending-list-item-title{
+    font-weight: bold;
+    font-size: 7mm;
+    font-variant-caps: all-petite-caps;
+    color: white;
+    position: absolute;
+    margin-top: 1vh;
+    margin-left: 11vh;
+}
+
+.trending-list-item-releasedate{
+    font-size: 3.3mm;
+    width: 470px;
+    height: 39px;
+    overflow-y:hidden;
+    color: white;
+    position: absolute;
+    margin-top: 4.5vh;
+    margin-left: 11vh;
+}
+
+
+.trending-list-item-button{
+    background-color: grey;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 15px ;
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 3vh;
+
+    border: none;
+    border-radius: 100%;
+    border-color: #151515;
+    border-width: 1cm;
+    opacity: 0;
+}
+
+.trending-list:hover{
+    transform: scale(1.1);
+    transition: 0.1s all ease-in-out;
+    background-color: #4f4f509d;
+}
+
+
+.trending-list:hover .trending-list-item-button{
+    opacity: 1;
+}
+
+.trending-list:hover .trending-list-item-title{
+    color: red;
+}
+
+.trending-list:hover .trending-list-item-releasedate{
+    height: 50px ;
+}
+
+.trending-list:hover .trending-list-item-img{
+    opacity: 0.4;
+}
+
+
+.drama-list-container{
+    padding-left: 10px;
+}
+
+.drama-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.drama-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all .5s ease-in-out;
+}
+
+.drama-list-title{
+    margin-top: 1%;
+    color: rgb(192, 11, 11);
+}
+
+.drama-list-item{
+    margin-top: -3%;
+    margin-right: 30px;
+    transition: all 1s ease-in-out ;
+    position: relative;
+    text-align: justify;
+}
+
+.drama-list-item:hover .drama-list-item-img{
+    transition: all 0.1s ease-in-out ;
+    transform: scale(1.13);
+    margin: 0 10px;
+    opacity: 0.4;
+}
+
+.drama-list-item:hover .drama-list-item-title,
+.drama-list-item:hover .drama-list-item-desc,
+.drama-list-item:hover .drama-list-item-button{
+    opacity: 0.8;
+    transition: 0.1s all ease-in;
+}
+
+.drama-list-item-img{
+    padding-top: 19px;
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    opacity: 1;
+    border-radius: 30px;
+}
+
+.drama-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    opacity: 0;
+}
+
+.drama-list-item-desc{
+    background-color: #333;
+    text-align: justify;
+    width: 310px;
+    height: 70px;
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 60%;
+    left: 5px;
+    opacity: 0;
+    overflow:hidden;
+}
+
+.drama-list-item-button{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 40px 10px 40px;
+    background-color: #4dbf00;
+    color: white;
+    border: none;
+    cursor:pointer;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    opacity: 0;
+}
+
+.arrow{
+    font-size: 90px;
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.container.active , .sidebar.active{
+    background-color: white;
+
+}
+
+.drama-list-title.active , .left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+    transition: 1s all;
+}
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
+
+@keyframes slide{
+    0%{
+        background-image: url("Thumbnails/Slider-1.jpg");
+    }
+    20%{
+        background-image: url("Thumbnails/Slider-1.jpg");
+    }
+    20.01%{
+        background-image: url("Thumbnails/Slider-2.webp");
+    }
+    40%{
+        background-image: url("Thumbnails/Slider-2.webp");
+    }
+    40.01%{
+        background-image: url("Thumbnails/Slider-3.webp");
+    }
+    60%{
+        background-image: url("Thumbnails/Slider-3.webp");
+    }
+    60.01%{
+        background-image: url("Thumbnails/Slider-4.webp");
+    }
+    80%{
+        background-image: url("Thumbnails/Slider-4.webp");
+    }
+    80.01%{
+        background-image: url("Thumbnails/Slider-5.jfif");
+    }
+    100%{
+        background-image: url("Thumbnails/Slider-5.jfif");
+    }
+}
