@@ -5,7 +5,7 @@
 - [ ] **(S)** Put all the information from this link in `keyword.json`
       https://www.w3schools.com/python/python_ref_functions.asp
 - [ ] **(S)** Make a utility function `retrieveKeywordDetails()` in `util.js` that takes in a certain keyword as an input and returns the detail about that keyword from `keyword.json`. If there is no such keyword it returns `null`
-- [x] **(D)** Make a next.js api endpoint `/execute` that will take in python code as parameter and execute it on the server and send back the result.
+- [x] **(D)** ~~Make a next.js api endpoint `/execute` that will take in python code as parameter and execute it on the server and send back the result.~~
 - [ ] **(D)** Make a next.js code editor component using code mirror. (edtior area + execution area)
   - [ ] **(D)** Show keyword details as a tooltip when hovered using `retrieveKeywordDetails()`
         https://codemirror.net/examples/tooltip/
@@ -16,9 +16,9 @@
 - [ ] **(D)** Make a separate folder name `code` where we would store all the examples codes
 - **Index Page**
   - [ ] **(S)** `retrieveChapterNames()` - retrieve all the chapter names of the `code` folder.
-  - [x] **(S)** Make layout of the index page in html
+  - [x] **(S)** ~~Make layout of the index page in html~~
   - [ ] **(D)** Convert the layout of index page from html to JSX (nextjs)
-  - [x] **(S)** Add styling to the index page
+  - [x] **(S)** ~~Add styling to the index page~~
   - Render all the chapters to index page using `retrieveChapterNames()`
 - **Chapter Page**
   - [ ] **(S)** `retrieveTopics()` - returns all the topic path given a topic name from `code` folder
