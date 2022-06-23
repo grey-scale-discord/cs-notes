@@ -13,7 +13,7 @@
 
 #### Pages
 
-- [ ] **(D)** Make a separate folder name `code` where we would store all the examples codes
+- [ ] **(D)** Add all the example codes in a separate folder name `code`
 - **Index Page**
   - [ ] **(S)** `retrieveChapterNames()` - retrieve all the chapter names of the `code` folder.
   - [x] **(S)** ~~Make layout of the index page in html~~
