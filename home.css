@@ -4,7 +4,8 @@
 
 body{
     font-family: 'Roboto' , 'sans-serif';
-    background-color: rgba(214, 203, 203, 0.795);
+    background-color: black;
+    overflow: hidden;
 }
 
 
@@ -110,8 +111,11 @@ body{
 
 .background{
     margin-top: -8vh;
+    margin-left: -10vh;
     padding-left: 100vh;
-    padding-bottom: 75vh;
+    padding-bottom: 85vh;
+    width: 68.56%;
+    height: 45vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('Thumbnails/Background.gif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,23 +125,23 @@ body{
     position: absolute;
     padding: 90px;
     margin-left: -85vh;
-    margin-top: 20vh;
+    margin-top: 25vh;
     text-align: justify;
     color: white;
 }
 
 h5{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 h3{
-    font-size: 40px;
+    font-size: 65px;
     margin-top: 10px;
 }
 
 
 .button{
-    font-size: 15px;
+    font-size: 30px;
     margin-top: 35px;
     text-align: center;
     padding: 10px 50px 10px 50px;
@@ -150,7 +154,8 @@ h3{
 .content-container{
     padding-left: 50%;
     margin: 30px;
-    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background-color: rgb(28, 145, 255)
 }
 
 .content-container-strip-1{
@@ -158,20 +163,50 @@ h3{
     padding: 20px;
     width: 10vh;
     height: 30vh;
-    background-color: rgba(255, 238, 0, 0.664)
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+    background-color: rgb(28, 145, 255)
 }
 
-.content-container-about-web{
-    border: solid;
-    height: 30vh;
-    margin-left: 20vh;
+.tab-1 , .tab-2 , .tab-3 , .tab-4 , .tab-5{
+    position: absolute;
+    padding: 30px;
+    width: 35vh;
+    background-color: white;
     color: white;
-    background-color: black;
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(rgb(28, 145, 255),rgb(28, 145, 255));
 }
 
-.content-container-about-web-video{
-    width: 150vh;
-    background-size: cover;
-    margin-left: 30px;
-    margin-top: 40px;
+.tab-1{
+    margin-left: 110vh;
+    margin-top: -45vh;
+}
+
+.tab-2{
+    margin-left: 125vh;
+    margin-top: -30vh;
+}
+
+.tab-3{
+    margin-left: 110vh;
+    margin-top: -15vh;
+}
+
+.tab-4{
+    margin-left: 125vh;
+}
+
+.tab-5{
+    margin-left: 110vh;
+    margin-top: 15vh;
+}
+
+.tab-1:hover ,
+.tab-2:hover ,
+.tab-3:hover ,
+.tab-4:hover , 
+.tab-5:hover{
+    background: orange;
+    transform: scale(1.1);
 }
