@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Roboto' , 'sans-serif';
-    overflow: hidden;
+    background-color: rgba(214, 203, 203, 0.795);
 }
 
 
@@ -111,24 +111,28 @@ body{
 .background{
     margin-top: -8vh;
     padding-left: 100vh;
-    padding-bottom: 100.5vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://wallpapertag.com/wallpaper/full/3/3/9/555556-wallpaper-of-study-2560x1600-samsung.jpg');
+    padding-bottom: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('Thumbnails/Background.gif');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .background-text{
-    border-style:groove;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 70vh;
-    height: 20vh;
     position: absolute;
     padding: 90px;
     margin-left: -85vh;
-    margin-top: 30vh;
+    margin-top: 20vh;
     text-align: justify;
-    font-size: 25px;
     color: white;
+}
+
+h5{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 40px;
+    margin-top: 10px;
 }
 
 
@@ -143,30 +147,31 @@ body{
     cursor: pointer;
 }
 
-.background-divider{
-    border-style:solid;
-    border-width: 3px;
-    border-color: white;
-    position: absolute;
-    padding-bottom: 65vh;
-    margin-left: 15vh;
-    margin-top: 20vh;
+.content-container{
+    padding-left: 50%;
+    margin: 30px;
+    background-color: black;
 }
 
-.web-desc{
-    position: absolute;
-    color: white;
-    width: 65vh;
+.content-container-strip-1{
+    margin-left: -100%;
+    padding: 20px;
+    width: 10vh;
+    height: 30vh;
+    background-color: rgba(255, 238, 0, 0.664)
+}
+
+.content-container-about-web{
+    border: solid;
+    height: 30vh;
     margin-left: 20vh;
-    margin-top: 25vh;
-    height: 55vh;
-    overflow: hidden;
-    text-align: justify;
-    font-size: 25px;
+    color: white;
+    background-color: black;
 }
 
-.web-desc::before{
-    color:rgb(28, 145, 255);
-    content: "Max Drive ";
-    font-size: 30px;
+.content-container-about-web-video{
+    width: 150vh;
+    background-size: cover;
+    margin-left: 30px;
+    margin-top: 40px;
 }
