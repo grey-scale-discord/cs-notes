@@ -71,32 +71,6 @@ body{
     object-fit: cover;
 }
 
-.toggle{
-    width: 40px;
-    height: 20px;
-    background-color: white;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-}
-
-.toggle-icon{
-    color: goldenrod;
-}
-
-.toggle-ball{
-    width: 18px;
-    height: 18px;
-    background-color: black;
-    position: absolute;
-    right: 1px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 1s all;
-}
-
 .left-menu-icon{
     color:white;
     font-size: 20px;
@@ -186,33 +160,4 @@ body{
     padding-left: 55px;
     padding-right: 59px;
     text-align: center;
-}
-
-.arrow{
-    font-size: 90px;
-    position: absolute;
-    top: 35%;
-    right: 10px;
-    color: lightgray;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.navbar-container.active{
-    background-color: white;
-    color: black;
-}
-
-.container.active , .sidebar.active{
-    background-color: white;
-}
-
-.toggle.active{
-    background-color: black;
-}
-
-.toggle-ball.active{
-    background-color: white;
-    transform: translateX(-20px);
-    transition: 1s all;
 }

@@ -70,32 +70,6 @@ body{
     object-fit: cover;
 }
 
-.toggle{
-    width: 40px;
-    height: 20px;
-    background-color: white;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-}
-
-.toggle-icon{
-    color: goldenrod;
-}
-
-.toggle-ball{
-    width: 18px;
-    height: 18px;
-    background-color: black;
-    position: absolute;
-    right: 1px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 1s all;
-}
-
 .left-menu-icon{
     color:white;
     font-size: 20px;
@@ -113,7 +87,7 @@ body{
     margin-left: 60px;
 }
 
-.trending-list{
+.index-list{
     border-style: solid;
     border-radius: 20px;
     opacity: 0.8;
@@ -128,7 +102,7 @@ body{
     padding-bottom: 70px;
 }
 
-.trending-list-item-title{
+.index-list-item-title{
     font-weight: bold;
     font-size: 7mm;
     font-variant-caps: all-petite-caps;
@@ -138,46 +112,16 @@ body{
     margin-left: 11vh;
 }
 
-.trending-list:hover{
+.index-list:hover{
     transform: scale(1.1);
     transition: 0.1s all ease-in-out;
     background-color:aliceblue;
 }
 
-.trending-list:hover .trending-list-item-title{
+.index-list:hover .index-list-item-title{
     color: red;
 }
 
-.trending-list:hover .trending-list-item-img{
+.index-list:hover .index-list-item-img{
     opacity: 0.4;
-}
-
-
-.arrow{
-    font-size: 90px;
-    position: absolute;
-    top: 35%;
-    right: 10px;
-    color: lightgray;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.navbar-container.active{
-    background-color: white;
-    color: black;
-}
-
-.container.active , .sidebar.active{
-    background-color: white;
-}
-
-.toggle.active{
-    background-color: black;
-}
-
-.toggle-ball.active{
-    background-color: white;
-    transform: translateX(-20px);
-    transition: 1s all;
 }
