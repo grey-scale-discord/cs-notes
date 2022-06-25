@@ -44,7 +44,7 @@ body{
 }
 
 .menu-container{
-    flex: 6;
+    flex: 8;
 }
 
 .menu-list{
@@ -53,16 +53,35 @@ body{
 }
 
 .menu-list-item{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-right: 70px;
     font-size: 20px;
 }
 
 .menu-list-item-x{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font: bold;
     margin-right: 70px;
     font-size: 20px;
     color: rgb(28, 145, 255);
 }
+
+.menu-list-item:hover{
+    background-color: rgb(28, 145, 255);
+    cursor: pointer;
+}
+
+.menu-list-item-x:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
 
 .profile-container{
     flex: 3;
